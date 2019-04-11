@@ -10,7 +10,6 @@ create_project -in_memory -part xc7z020clg484-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-<<<<<<< HEAD
 set_property webtalk.parent_dir F:/Tetris/main/main.cache/wt [current_project]
 set_property parent.project_path F:/Tetris/main/main.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
@@ -21,29 +20,12 @@ set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   F:/Tetris/main/main.srcs/sources_1/new/main.vhd
   F:/Tetris/main/main.srcs/sources_1/imports/new/display.vhd
-=======
-set_property webtalk.parent_dir D:/Profiles/Administrator/Desktop/Tetris/main/main.cache/wt [current_project]
-set_property parent.project_path D:/Profiles/Administrator/Desktop/Tetris/main/main.xpr [current_project]
-set_property default_lib xil_defaultlib [current_project]
-set_property target_language VHDL [current_project]
-set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
-set_property ip_output_repo d:/Profiles/Administrator/Desktop/Tetris/main/main.cache/ip [current_project]
-set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib {
-  D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/main.vhd
-  D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/imports/new/display.vhd
->>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-<<<<<<< HEAD
 read_xdc F:/Tetris/main/main.srcs/constrs_1/imports/new/display.xdc
 set_property used_in_implementation false [get_files F:/Tetris/main/main.srcs/constrs_1/imports/new/display.xdc]
-=======
-read_xdc D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/constrs_1/imports/new/display.xdc
-set_property used_in_implementation false [get_files D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/constrs_1/imports/new/display.xdc]
->>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 
 
 synth_design -top main -part xc7z020clg484-1
