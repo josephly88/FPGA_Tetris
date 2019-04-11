@@ -1,8 +1,13 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+<<<<<<< HEAD
 | Date             : Wed Apr 10 23:40:38 2019
 | Host             : 1004-9020-1819-031 running 64-bit Service Pack 1  (build 7601)
+=======
+| Date             : Tue Apr 09 23:45:26 2019
+| Host             : 1004-9020-1819-030 running 64-bit Service Pack 1  (build 7601)
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 | Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
 | Design           : main
 | Device           : xc7z020clg484-1
@@ -30,12 +35,21 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
+<<<<<<< HEAD
 | Total On-Chip Power (W)  | 0.125 |
 | Dynamic (W)              | 0.004 |
 | Device Static (W)        | 0.121 |
 | Effective TJA (C/W)      | 11.5  |
 | Max Ambient (C)          | 83.6  |
 | Junction Temperature (C) | 26.4  |
+=======
+| Total On-Chip Power (W)  | 0.127 |
+| Dynamic (W)              | 0.005 |
+| Device Static (W)        | 0.122 |
+| Effective TJA (C/W)      | 11.5  |
+| Max Ambient (C)          | 83.5  |
+| Junction Temperature (C) | 26.5  |
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,6 +63,7 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
+<<<<<<< HEAD
 | Clocks         |     0.001 |        3 |       --- |             --- |
 | Slice Logic    |    <0.001 |      625 |       --- |             --- |
 |   LUT as Logic |    <0.001 |      322 |     53200 |            0.61 |
@@ -61,6 +76,18 @@ Table of Contents
 | I/O            |     0.001 |       15 |       200 |            7.50 |
 | Static Power   |     0.121 |          |           |                 |
 | Total          |     0.125 |          |           |                 |
+=======
+| Clocks         |    <0.001 |        3 |       --- |             --- |
+| Slice Logic    |     0.002 |      593 |       --- |             --- |
+|   LUT as Logic |     0.002 |      362 |     53200 |            0.68 |
+|   CARRY4       |    <0.001 |       93 |     13300 |            0.70 |
+|   Register     |    <0.001 |       27 |    106400 |            0.03 |
+|   Others       |     0.000 |        4 |       --- |             --- |
+| Signals        |     0.002 |      320 |       --- |             --- |
+| I/O            |     0.001 |       15 |       200 |            7.50 |
+| Static Power   |     0.122 |          |           |                 |
+| Total          |     0.127 |          |           |                 |
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +97,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
+<<<<<<< HEAD
 | Vccint    |       1.000 |     0.010 |       0.003 |      0.007 |
+=======
+| Vccint    |       1.000 |     0.012 |       0.004 |      0.007 |
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 | Vccaux    |       1.800 |     0.019 |       0.000 |      0.019 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -143,11 +174,20 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
+<<<<<<< HEAD
 +---------+-----------+
 | Name    | Power (W) |
 +---------+-----------+
 | main    |     0.004 |
 |   PRINT |     0.001 |
 +---------+-----------+
+=======
++-----------+-----------+
+| Name      | Power (W) |
++-----------+-----------+
+| main      |     0.005 |
+|   DISPLAY |     0.004 |
++-----------+-----------+
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 
 

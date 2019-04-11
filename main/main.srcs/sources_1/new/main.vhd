@@ -55,12 +55,18 @@ end main;
 architecture Behavioral of main is
     
     signal myboard : board;
+<<<<<<< HEAD
     signal clk1Hz  : std_logic := '0';
     signal counter : integer := 0;
     signal pulse : integer := 0;
     
 --From display.vhd
 component display is
+=======
+
+--From display.vhd
+component vga_test is
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
     port(
         clk100MHz      : in  std_logic;
         hsync,vsync    : out std_logic;
@@ -68,6 +74,7 @@ component display is
         myboard        : in  board
     );
 end component;
+<<<<<<< HEAD
 
 component move is
       port(
@@ -138,4 +145,34 @@ PRINT: display port map (clk100MHz => clk100MHz,
         end if;
     end process;
     
+=======
+    
+begin
+
+    --Test
+    process(myboard)
+    begin
+        for i in 0 to 19 loop
+            for j in 0 to 9 loop
+                if (i + j) mod 2 = 0 then
+                    myboard(i)(j) <= '1';
+                else 
+                    myboard(i)(j) <= '0';
+                end if;
+            end loop;
+        end loop;
+    end process;
+    
+    --Display
+    DISPLAY: vga_test port map (clk100MHz => clk100MHz,
+                      hsync => hsync,
+                      vsync => vsync,
+                      red => red,
+                      green => green,
+                      blue => blue,
+                      myboard => myboard);
+                      
+    
+
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 end Behavioral;

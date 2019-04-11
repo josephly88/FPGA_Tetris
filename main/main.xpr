@@ -3,7 +3,11 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
+<<<<<<< HEAD
 <Project Version="7" Minor="17" Path="F:/Tetris/main/main.xpr">
+=======
+<Project Version="7" Minor="17" Path="D:/Profiles/Administrator/Desktop/Tetris/main/main.xpr">
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="5ce09e2d40ed484a994be9c1a81b56e3"/>
@@ -68,6 +72,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+<<<<<<< HEAD
       <File Path="$PSRCDIR/sources_1/new/move.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -75,6 +80,8 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+=======
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="main"/>
@@ -96,7 +103,10 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+<<<<<<< HEAD
       <Filter Type="Srcs"/>
+=======
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="main"/>
@@ -129,7 +139,13 @@
   <Runs Version="1" Minor="10">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
+<<<<<<< HEAD
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+=======
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -137,7 +153,13 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
+<<<<<<< HEAD
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+=======
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

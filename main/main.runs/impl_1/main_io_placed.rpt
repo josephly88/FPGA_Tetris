@@ -1,8 +1,13 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+<<<<<<< HEAD
 | Date         : Wed Apr 10 23:40:10 2019
 | Host         : 1004-9020-1819-031 running 64-bit Service Pack 1  (build 7601)
+=======
+| Date         : Tue Apr 09 23:44:59 2019
+| Host         : 1004-9020-1819-030 running 64-bit Service Pack 1  (build 7601)
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 | Command      : report_io -file main_io_placed.rpt
 | Design       : main
 | Device       : xc7z020

@@ -6,16 +6,26 @@ use IEEE.NUMERIC_STD.ALL;
 library work;
 use work.my_types_pkg.all;
 
+<<<<<<< HEAD
 entity display is
+=======
+entity vga_test is
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
     port(
         clk100MHz      : in  std_logic;
         hsync,vsync    : out std_logic;
         red,green,blue : out std_logic_vector(3 downto 0);
         myboard        : in  board
     );
+<<<<<<< HEAD
 end display;
 
 architecture Behavioral of display is
+=======
+end vga_test;
+
+architecture vga_test_arch of vga_test is
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 
 -- row constants
 constant H_TOTAL: integer:=800-1;
@@ -35,6 +45,7 @@ constant V_ACTIVE: integer:=480-1;
 constant V_END: integer:=524-11-1;
 constant V_FRONT: integer:=11-1;
 
+<<<<<<< HEAD
 --tetris board constants
 constant B_HSTART: integer:=363;
 constant B_HEND: integer:=563;
@@ -46,6 +57,12 @@ signal hcount, vcount: std_logic_vector(11 downto 0);
 signal counter: integer := 0;
 
 --for board element
+=======
+signal clk50MHz, clk25MHz: std_logic;
+signal hcount, vcount: std_logic_vector(11 downto 0);
+
+--test
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 signal data : std_logic;
 
 begin
@@ -66,6 +83,7 @@ begin
     end if;
 end process vga_clk_gen_proc2;
 
+<<<<<<< HEAD
 -- generate 25KHz clock
 vga_clk_gen_proc3: process(clk25MHz)
 begin
@@ -79,6 +97,8 @@ begin
     end if;
 end process vga_clk_gen_proc3;
 
+=======
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 -- horizontal counter
 pixel_count_proc: process(clk25MHz)
 begin
@@ -125,6 +145,7 @@ begin
 end process vsync_gen_proc;
 
 -- generate RGB signals for 640x480 display area
+<<<<<<< HEAD
 data_output_proc: process(hcount, vcount, myboard)
 begin
     -- size of addressable video
@@ -155,6 +176,33 @@ begin
             red   <= "0000";
             green <= "0000";
             blue  <= "0000";
+=======
+data_output_proc: process(hcount, vcount)
+begin
+    -- inside the monitor 640 x 480
+    if( (hcount>=H_START and hcount<H_END) and (vcount >= V_START and vcount<V_TOTAL) ) then
+        -- the border only
+        if ( ((hcount>=563 and hcount<568) and (vcount >= 72 and vcount < 472)) 
+               or ((hcount<363 and hcount>=358) and (vcount >= 72 and vcount <472))
+               or ((hcount>=363 and hcount<563) and (vcount <72 and vcount >=67))
+               or ((hcount>=363 and hcount<563) and (vcount >=472 and vcount<477))) then
+            red   <= "1111";
+            green <= "1111";
+            blue  <= "1111";
+        else
+            -- inside the border
+            if( hcount>=363 and hcount <563) and (vcount >= 72 and vcount < 472) then
+                --HERE!!
+                
+                red   <= "1111";
+                green <= "0000";
+                blue  <= "0000";
+            else
+                red   <= "0000";
+                green <= "0000";
+                blue  <= "0000";
+            end if;
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
         end if;
     else
         red   <= "0000";
@@ -163,4 +211,8 @@ begin
     end if;
 end process data_output_proc;
 
+<<<<<<< HEAD
 end Behavioral;
+=======
+end vga_test_arch;
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2

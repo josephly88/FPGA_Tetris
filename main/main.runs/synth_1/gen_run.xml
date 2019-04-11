@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1554910721">
+=======
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1554824635">
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
   <File Type="RDS-PROPCONSTRS" Name="main_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="main.tcl"/>
   <File Type="RDS-RDS" Name="main.vds"/>
@@ -24,6 +28,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+<<<<<<< HEAD
     <File Path="$PSRCDIR/sources_1/new/move.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -31,6 +36,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+=======
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="main"/>
@@ -52,7 +59,13 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
+<<<<<<< HEAD
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+=======
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

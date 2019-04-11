@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 set_property SRC_FILE_INFO {cfile:F:/Tetris/main/main.srcs/constrs_1/imports/new/display.xdc rfile:../../../main.srcs/constrs_1/imports/new/display.xdc id:1} [current_design]
+=======
+set_property SRC_FILE_INFO {cfile:D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/constrs_1/imports/new/display.xdc rfile:../../../main.srcs/constrs_1/imports/new/display.xdc id:1} [current_design]
+>>>>>>> 2b594a68ac1bee27820485b6cb0feb0896ff1ad2
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y9 [get_ports {clk100MHz}]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
