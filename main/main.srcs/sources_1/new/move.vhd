@@ -1,41 +1,37 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
-use IEEE.NUMERIC_STD.ALL;
 
 library work;
 use work.my_types_pkg.all;
 
 entity move is
     Port ( clk1Hz  : in std_logic;
-           myboard : buffer board
+           myboard : buffer board;
+           key     : buffer std_logic_vector(3 downto 0)
     );
 end move;
 
 architecture Behavioral of move is
-
-constant count: integer := 0;
+    signal pulse : integer := 0;
+    signal x : integer := 0;
+    signal y : integer := 5;
+    
 begin
-
-    process(clk1Hz, myboard)
-    variable i : integer range 0 to 20; 
-    variable j : integer range 0 to 10; 
+    process(clk1Hz)         
     begin
-        
-            myboard(0)(5) <= '0';
-            myboard(1)(5) <= '1';
---            loop
---                exit when i = 20;
---                loop
---                    exit when j = 10;
---                    if myboard(i)(j) = '1' then
---                        myboard(i)(j) <= '0';
---                        if(i < 19) then
---                            myboard(i+1)(j) <= '1';
---                        end if;
---                        exit;
---                    end if;
---                end loop;
---            end loop;
+        if rising_edge(clk1Hz) then
+            if(pulse = 0 and (myboard(x)(y)) = '0') then
+                (myboard(x)(y)) <= '1';
+                 pulse <= pulse + 1;
+            elsif(pulse < 20  and (myboard(x+1)(y)) = '0' and (myboard(x)(y)) = '1') then          
+                (myboard(x+1)(y)) <= '1';
+                (myboard(x)(y)) <= '0';
+                x <= pulse;
+                pulse <= pulse + 1;
+            else
+                pulse <= 0;
+                x <= 0;
+            end if;
+        end if;
     end process;
 end Behavioral;

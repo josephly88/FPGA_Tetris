@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/Tetris/main/main.runs/impl_1'
+HD_PWD='D:/Profiles/Administrator/Desktop/Tetris/main/main.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

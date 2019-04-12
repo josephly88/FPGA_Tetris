@@ -48,7 +48,9 @@ entity main is
         --For display
         clk100MHz      : in  std_logic;
         hsync,vsync    : out std_logic;
-        red,green,blue : out std_logic_vector(3 downto 0) 
+        red,green,blue : out std_logic_vector(3 downto 0) ;
+        JA             : inout std_logic_vector(7 downto 0);
+        led            : out  STD_LOGIC_VECTOR (7 downto 0)
         );
 end main;
 
@@ -56,8 +58,9 @@ architecture Behavioral of main is
     
     signal myboard : board;
     signal clk1Hz  : std_logic := '0';
+    signal clktest : std_logic := '0';
     signal counter : integer := 0;
-    signal pulse : integer := 0;
+    signal testcounter : integer := 0;
     
 --From display.vhd
 component display is
@@ -66,6 +69,15 @@ component display is
         hsync,vsync    : out std_logic;
         red,green,blue : out std_logic_vector(3 downto 0);
         myboard        : in  board
+    );
+end component;
+
+component PmodKYPD is
+    port(
+        clk : in  STD_LOGIC;
+        JA : inout  STD_LOGIC_VECTOR (7 downto 0); -- PmodKYPD is designed to be connected to JA
+        led : out  STD_LOGIC_VECTOR (7 downto 0);
+        key : buffer STD_LOGIC_VECTOR (3 downto 0)
     );
 end component;
 
@@ -90,30 +102,7 @@ begin
             end if;
         end if;
     end process;
-
-    --board array, i:row,j:colomn
---    process
---    begin
---        for i in 0 to 19 loop
---            for j in 0 to 9 loop
-----                  for testing all display
-----                if (i + j) mod 2 = 0 then
-----                    myboard(i)(j) <= '1';
-----                else 
-----                    myboard(i)(j) <= '0';
-----                end if;
-
-----                  initilize [0][5]
---                  if(i = 0 and j = 5) then
---                        myboard(i)(j) <= '1';
---                  else
---                        myboard(i)(j) <= '0';
---                  end if; 
-                  
---            end loop;
---        end loop;
---    end process;
-    
+   
 --Display
 PRINT: display port map (clk100MHz => clk100MHz,
             hsync => hsync,
@@ -123,19 +112,14 @@ PRINT: display port map (clk100MHz => clk100MHz,
             blue => blue,
             myboard => myboard);
     
---One block drop
---DROP: move port map (clk1Hz => clk1Hz,
---            myboard => myboard);                      
+KEYPAD: PmodKYPD port map(
+            clk => clk100MHz,
+            JA => JA,
+            led => led);                  
 
-    process(clk1Hz)         
-    begin
-        if rising_edge(clk1Hz) then
-            if(pulse < 20) then          
-                myboard(pulse)(5) <= '1';
-                myboard(pulse-1)(5) <= '0';
-                pulse <= pulse + 1;
-            end if;
-        end if;
-    end process;
-    
+MOV: move port map(
+            clk1Hz  => clk1Hz,
+            myboard => myboard
+);
+
 end Behavioral;

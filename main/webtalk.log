@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Apr 11 21:07:24 2019
+# Process ID: 7836
+# Current directory: D:/Profiles/Administrator/Desktop/Tetris/main
+# Command line: wbtcv.exe -mode batch -source D:/Profiles/Administrator/Desktop/Tetris/main/main.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: D:/Profiles/Administrator/Desktop/Tetris/main/webtalk.log
+# Journal file: D:/Profiles/Administrator/Desktop/Tetris/main\webtalk.jou
+#-----------------------------------------------------------
+source D:/Profiles/Administrator/Desktop/Tetris/main/main.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Profiles/Administrator/Desktop/Tetris/main/main.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Thu Apr 11 21:07:29 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 11 21:07:29 2019...

@@ -54,12 +54,12 @@ set rc [catch {
   set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir F:/Tetris/main/main.cache/wt [current_project]
-  set_property parent.project_path F:/Tetris/main/main.xpr [current_project]
-  set_property ip_output_repo F:/Tetris/main/main.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/Profiles/Administrator/Desktop/Tetris/main/main.cache/wt [current_project]
+  set_property parent.project_path D:/Profiles/Administrator/Desktop/Tetris/main/main.xpr [current_project]
+  set_property ip_output_repo D:/Profiles/Administrator/Desktop/Tetris/main/main.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet F:/Tetris/main/main.runs/synth_1/main.dcp
-  read_xdc F:/Tetris/main/main.srcs/constrs_1/imports/new/display.xdc
+  add_files -quiet D:/Profiles/Administrator/Desktop/Tetris/main/main.runs/synth_1/main.dcp
+  read_xdc D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/constrs_1/imports/new/display.xdc
   link_design -top main -part xc7z020clg484-1
   write_hwdef -file main.hwdef
   close_msg_db -file init_design.pb
