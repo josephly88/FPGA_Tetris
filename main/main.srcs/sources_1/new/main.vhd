@@ -24,7 +24,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 package my_types_pkg is
   --create 2d array for board
-    type board is array (0 to 19) of std_logic_vector(0 to 9);
+    type lines is array(0 to 9) of std_logic_vector(0 to 1);
+    type board is array(0 to 20) of lines;
 end package;
 
 library work;

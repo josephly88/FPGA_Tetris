@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Fri Apr 12 23:43:52 2019
-| Host         : 1004-9020-1819-013 running 64-bit Service Pack 1  (build 7601)
+| Date         : Sat Apr 13 21:09:32 2019
+| Host         : 1004-9020-1819-042 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
 | Design       : main
 | Device       : xc7z020
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     7 |
-| Unused register locations in slices containing registers |    32 |
+| Number of unique control sets                            |    10 |
+| Unused register locations in slices containing registers |    34 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,10 +33,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               8 |            5 |
+| No           | No                    | No                     |              95 |           49 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              32 |            8 |
-| Yes          | No                    | No                     |               4 |            2 |
+| No           | Yes                   | No                     |              63 |           16 |
+| Yes          | No                    | No                     |             100 |           25 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              12 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -45,27 +45,31 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------+--------------------------+------------------+------------------+----------------+
-|       Clock Signal      |       Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+-------------------------+--------------------------+------------------+------------------+----------------+
-|  PRINT/data_reg_i_2_n_0 |                          |                  |                1 |              1 |
-|  PRINT/clk50MHz         |                          |                  |                1 |              1 |
-|  clk100MHz_IBUF_BUFG    | KEYPAD/C0/Col[3]_i_1_n_0 |                  |                2 |              4 |
-|  clk100MHz_IBUF_BUFG    |                          |                  |                3 |              6 |
-|  PRINT/clk              |                          | PRINT/eqOp       |                3 |             12 |
-|  PRINT/clk              | PRINT/eqOp               | PRINT/vcount     |                3 |             12 |
-|  clk100MHz_IBUF_BUFG    |                          | KEYPAD/C0/sclk   |                5 |             20 |
-+-------------------------+--------------------------+------------------+------------------+----------------+
++----------------------------+----------------------------+------------------------------+------------------+----------------+
+|        Clock Signal        |        Enable Signal       |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------------------+----------------------------+------------------------------+------------------+----------------+
+|  PRINT/clk50MHz            |                            |                              |                1 |              1 |
+|  PRINT/data_reg[0]_i_2_n_0 |                            |                              |                1 |              2 |
+|  clk100MHz_IBUF_BUFG       | KEYPAD/C0/Col[3]_i_1_n_0   |                              |                1 |              4 |
+|  clk100MHz_IBUF_BUFG       |                            |                              |                5 |              8 |
+|  PRINT/clk                 |                            | PRINT/eqOp                   |                3 |             12 |
+|  PRINT/clk                 | PRINT/eqOp                 | PRINT/vcount                 |                3 |             12 |
+|  clk100MHz_IBUF_BUFG       |                            | KEYPAD/C0/sclk               |                5 |             20 |
+|  clk100MHz_IBUF_BUFG       |                            | MOV/FALL/counter[31]_i_1_n_0 |                8 |             31 |
+|  FALL/clk1Hz               |                            |                              |               42 |             84 |
+|  FALL/clk1Hz               | MOV/FALL/nextR2[0]_i_1_n_0 |                              |               24 |             96 |
++----------------------------+----------------------------+------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 1      |                     2 |
+| 1      |                     1 |
+| 2      |                     1 |
 | 4      |                     1 |
-| 6      |                     1 |
+| 8      |                     1 |
 | 12     |                     2 |
-| 16+    |                     1 |
+| 16+    |                     4 |
 +--------+-----------------------+
 
 

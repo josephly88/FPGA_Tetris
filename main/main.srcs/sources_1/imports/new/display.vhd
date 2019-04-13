@@ -46,7 +46,7 @@ signal hcount, vcount: std_logic_vector(11 downto 0);
 signal counter: integer := 0;
 
 --for board element
-signal data : std_logic;
+signal data : std_logic_vector(0 to 1);
 
 begin
 
@@ -126,6 +126,8 @@ end process vsync_gen_proc;
 
 -- generate RGB signals for 640x480 display area
 data_output_proc: process(hcount, vcount, myboard)
+variable i : integer;
+variable j : integer;
 begin
     -- size of addressable video
     if( (hcount>=H_START and hcount<H_END) and (vcount >= V_START and vcount<V_TOTAL) ) then
@@ -136,8 +138,14 @@ begin
             -- size of tetris board
             if (hcount>=B_HSTART and hcount<B_HEND) and (vcount>=B_VSTART and vcount<B_VEND) then
                 --inside the board
-                data <= myboard(to_integer(unsigned(vcount-B_VSTART))/20)(to_integer(unsigned(hcount-B_HSTART))/20);
-                if data = '1' then
+                i := to_integer(unsigned(vcount-B_VSTART))/20 + 1;
+                j := to_integer(unsigned(hcount-B_HSTART))/20;
+                data <= myboard(i)(j);
+                if data = "01" then
+                    red   <= "0000";
+                    green <= "0000";
+                    blue  <= "1111";
+                elsif data = "10" then
                     red   <= "1111";
                     green <= "0000";
                     blue  <= "0000";

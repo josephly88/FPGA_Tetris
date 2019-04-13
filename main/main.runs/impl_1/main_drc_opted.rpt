@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Fri Apr 12 23:43:47 2019
-| Host         : 1004-9020-1819-013 running 64-bit Service Pack 1  (build 7601)
+| Date         : Sat Apr 13 21:09:25 2019
+| Host         : 1004-9020-1819-042 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc -file main_drc_opted.rpt
 | Design       : main
 | Device       : xc7z020clg484-1
