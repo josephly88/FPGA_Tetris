@@ -26,7 +26,7 @@ entity Decoder is
 			  clk : in  STD_LOGIC;
               Row : in  STD_LOGIC_VECTOR (3 downto 0);
 			  Col : out  STD_LOGIC_VECTOR (3 downto 0);
-              DecodeOut : out  STD_LOGIC_VECTOR (3 downto 0));
+              DecodeOut : out  STD_LOGIC_VECTOR (4 downto 0));
 end Decoder;
 
 architecture Behavioral of Decoder is
@@ -45,16 +45,18 @@ begin
 			elsif sclk = "00011000011010101000" then	
 				--R1
 				if Row = "0111" then
-					DecodeOut <= "0001";	--1
+					DecodeOut <= "00001";	--1
 				--R2
 				elsif Row = "1011" then
-					DecodeOut <= "0100"; --4
+					DecodeOut <= "00100"; --4
 				--R3
 				elsif Row = "1101" then
-					DecodeOut <= "0111"; --7
+					DecodeOut <= "00111"; --7
 				--R4
 				elsif Row = "1110" then
-					DecodeOut <= "0000"; --0
+					DecodeOut <= "00000"; --0
+			    else
+			        DecodeOut <= "10000";
 				end if;
 				sclk <= sclk+1;
 			-- 2ms
@@ -66,16 +68,18 @@ begin
 			elsif sclk = "00110000110101001000" then	
 				--R1
 				if Row = "0111" then		
-					DecodeOut <= "0010"; --2
+					DecodeOut <= "00010"; --2
 				--R2
 				elsif Row = "1011" then
-					DecodeOut <= "0101"; --5
+					DecodeOut <= "00101"; --5
 				--R3
 				elsif Row = "1101" then
-					DecodeOut <= "1000"; --8
+					DecodeOut <= "01000"; --8
 				--R4
 				elsif Row = "1110" then
-					DecodeOut <= "1111"; --F
+					DecodeOut <= "01111"; --F
+                else
+                    DecodeOut <= "10000";
 				end if;
 				sclk <= sclk+1;	
 			--3ms
@@ -87,16 +91,18 @@ begin
 			elsif sclk = "01001001001111101000" then 
 				--R1
 				if Row = "0111" then
-					DecodeOut <= "0011"; --3	
+					DecodeOut <= "00011"; --3	
 				--R2
 				elsif Row = "1011" then
-					DecodeOut <= "0110"; --6
+					DecodeOut <= "00110"; --6
 				--R3
 				elsif Row = "1101" then
-					DecodeOut <= "1001"; --9
+					DecodeOut <= "01001"; --9
 				--R4
 				elsif Row = "1110" then
-					DecodeOut <= "1110"; --E
+					DecodeOut <= "01110"; --E
+                else
+                    DecodeOut <= "10000";
 				end if;
 				sclk <= sclk+1;
 			--4ms
@@ -108,16 +114,18 @@ begin
 			elsif sclk = "01100001101010001000" then 
 				--R1
 				if Row = "0111" then
-					DecodeOut <= "1010"; --A
+					DecodeOut <= "01010"; --A
 				--R2
 				elsif Row = "1011" then
-					DecodeOut <= "1011"; --B
+					DecodeOut <= "01011"; --B
 				--R3
 				elsif Row = "1101" then
-					DecodeOut <= "1100"; --C
+					DecodeOut <= "01100"; --C
 				--R4
 				elsif Row = "1110" then
-					DecodeOut <= "1101"; --D
+					DecodeOut <= "01101"; --D
+                else
+                    DecodeOut <= "10000";
 				end if;
 				sclk <= "00000000000000000000";	
 			else

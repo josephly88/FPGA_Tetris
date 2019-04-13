@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Fri Apr 12 00:08:59 2019
-| Host         : 1004-9020-1819-032 running 64-bit Service Pack 1  (build 7601)
+| Date         : Fri Apr 12 23:43:52 2019
+| Host         : 1004-9020-1819-013 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
 | Design       : main
 | Device       : xc7z020
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    11 |
-| Unused register locations in slices containing registers |    36 |
+| Number of unique control sets                            |     7 |
+| Unused register locations in slices containing registers |    32 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              29 |           22 |
+| No           | No                    | No                     |               8 |            5 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              95 |           24 |
+| No           | Yes                   | No                     |              32 |            8 |
 | Yes          | No                    | No                     |               4 |            2 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              44 |           13 |
+| Yes          | Yes                   | No                     |              12 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -51,14 +51,10 @@ Table of Contents
 |  PRINT/data_reg_i_2_n_0 |                          |                  |                1 |              1 |
 |  PRINT/clk50MHz         |                          |                  |                1 |              1 |
 |  clk100MHz_IBUF_BUFG    | KEYPAD/C0/Col[3]_i_1_n_0 |                  |                2 |              4 |
-|  clk100MHz_IBUF_BUFG    |                          |                  |                6 |              7 |
+|  clk100MHz_IBUF_BUFG    |                          |                  |                3 |              6 |
 |  PRINT/clk              |                          | PRINT/eqOp       |                3 |             12 |
 |  PRINT/clk              | PRINT/eqOp               | PRINT/vcount     |                3 |             12 |
 |  clk100MHz_IBUF_BUFG    |                          | KEYPAD/C0/sclk   |                5 |             20 |
-|  clk1Hz_reg_n_0_BUFG    |                          |                  |               14 |             20 |
-|  clk100MHz_IBUF_BUFG    |                          | clk1Hz           |                8 |             31 |
-|  clk1Hz_reg_n_0_BUFG    |                          | MOV/pulse        |                8 |             32 |
-|  clk1Hz_reg_n_0_BUFG    | MOV/x[31]_i_2_n_0        | MOV/pulse        |               10 |             32 |
 +-------------------------+--------------------------+------------------+------------------+----------------+
 
 
@@ -67,9 +63,9 @@ Table of Contents
 +--------+-----------------------+
 | 1      |                     2 |
 | 4      |                     1 |
-| 7      |                     1 |
+| 6      |                     1 |
 | 12     |                     2 |
-| 16+    |                     5 |
+| 16+    |                     1 |
 +--------+-----------------------+
 
 

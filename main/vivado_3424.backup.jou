@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Apr 11 20:30:52 2019
+# Process ID: 3424
+# Current directory: D:/Profiles/Administrator/Desktop/Tetris/main
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1492 D:\Profiles\Administrator\Desktop\Tetris\main\main.xpr
+# Log file: D:/Profiles/Administrator/Desktop/Tetris/main/vivado.log
+# Journal file: D:/Profiles/Administrator/Desktop/Tetris/main\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Profiles/Administrator/Desktop/Tetris/main/main.xpr
+close_project
+create_project project_1 D:/Profiles/Administrator/Desktop/keyboard/project_1
+import_xise D:/Profiles/Administrator/Desktop/keyboard/PmodKYPD.xise

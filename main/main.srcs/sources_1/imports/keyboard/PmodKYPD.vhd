@@ -22,8 +22,7 @@ entity PmodKYPD is
     Port ( 
 			  clk : in  STD_LOGIC;
 			  JA  : inout  STD_LOGIC_VECTOR (7 downto 0); -- PmodKYPD is designed to be connected to JA
-              led : out  STD_LOGIC_VECTOR (7 downto 0);
-              key : buffer STD_LOGIC_VECTOR (3 downto 0)
+              key : out STD_LOGIC_VECTOR (4 downto 0)
               );
 end PmodKYPD;
 
@@ -34,18 +33,10 @@ component Decoder is
 			 clk : in  STD_LOGIC;
              Row : in  STD_LOGIC_VECTOR (3 downto 0);
 			 Col : out  STD_LOGIC_VECTOR (3 downto 0);
-             DecodeOut : out  STD_LOGIC_VECTOR (3 downto 0));
-	end component;
-
-component DisplayController is
-	Port (
-                  DispVal : in  STD_LOGIC_VECTOR (3 downto 0);
-                  led     : out STD_LOGIC_VECTOR (7 downto 0)
-         );
+             DecodeOut : out  STD_LOGIC_VECTOR (4 downto 0));
 	end component;
 
 begin
 	C0: Decoder port map (clk=>clk, Row =>JA(7 downto 4), Col=>JA(3 downto 0), DecodeOut=> key);
-	C1: DisplayController port map (DispVal=>key, led=>led );
 end Behavioral;
 

@@ -50,17 +50,14 @@ entity main is
         hsync,vsync    : out std_logic;
         red,green,blue : out std_logic_vector(3 downto 0) ;
         JA             : inout std_logic_vector(7 downto 0);
-        led            : out  STD_LOGIC_VECTOR (7 downto 0)
+        led            : out std_logic_vector(7 downto 0)
         );
 end main;
 
 architecture Behavioral of main is
     
     signal myboard : board;
-    signal clk1Hz  : std_logic := '0';
-    signal clktest : std_logic := '0';
-    signal counter : integer := 0;
-    signal testcounter : integer := 0;
+    signal key     : std_logic_vector(4 downto 0);
     
 --From display.vhd
 component display is
@@ -76,33 +73,27 @@ component PmodKYPD is
     port(
         clk : in  STD_LOGIC;
         JA : inout  STD_LOGIC_VECTOR (7 downto 0); -- PmodKYPD is designed to be connected to JA
-        led : out  STD_LOGIC_VECTOR (7 downto 0);
-        key : buffer STD_LOGIC_VECTOR (3 downto 0)
+        key : buffer STD_LOGIC_VECTOR (4 downto 0)
     );
 end component;
 
+component DisplayController is
+	Port (
+                  DispVal : in  STD_LOGIC_VECTOR (4 downto 0);
+                  led     : out STD_LOGIC_VECTOR (7 downto 0)
+         );
+	end component;
+
 component move is
       port(
-            clk1Hz         : in  std_logic;
-            myboard        : buffer  board
+            clk100MHz  : in std_logic;
+            myboard : buffer board;
+            key     : buffer std_logic_vector(3 downto 0)
         );
 end component;
     
 begin
-                  
-    --1Hz clock
-    process(clk100MHz)
-    begin
-        if rising_edge(clk100MHz) then
-            if(counter = 100000000/2 - 1) then
-                clk1Hz <= not clk1Hz;
-                counter <= 0;
-            else
-                counter <= counter + 1;
-            end if;
-        end if;
-    end process;
-   
+
 --Display
 PRINT: display port map (clk100MHz => clk100MHz,
             hsync => hsync,
@@ -115,11 +106,15 @@ PRINT: display port map (clk100MHz => clk100MHz,
 KEYPAD: PmodKYPD port map(
             clk => clk100MHz,
             JA => JA,
-            led => led);                  
+            key => key
+            );                  
+
+C1: DisplayController port map (DispVal=>key, led=>led);
 
 MOV: move port map(
-            clk1Hz  => clk1Hz,
+            clk100MHz  => clk100MHz,
             myboard => myboard
 );
+
 
 end Behavioral;

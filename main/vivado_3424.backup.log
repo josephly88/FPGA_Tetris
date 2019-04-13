@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Apr 11 20:30:52 2019
+# Process ID: 3424
+# Current directory: D:/Profiles/Administrator/Desktop/Tetris/main
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1492 D:\Profiles\Administrator\Desktop\Tetris\main\main.xpr
+# Log file: D:/Profiles/Administrator/Desktop/Tetris/main/vivado.log
+# Journal file: D:/Profiles/Administrator/Desktop/Tetris/main\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Profiles/Administrator/Desktop/Tetris/main/main.xpr
+INFO: [Project 1-313] Project file moved from 'F:/Tetris/main' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'D:/Profiles/Administrator/Desktop/Tetris/main/main.cache/ip', nor could it be found using path 'F:/Tetris/main/main.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:39 . Memory (MB): peak = 726.535 ; gain = 132.117
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+close_project
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/Profiles/Administrator/Desktop/Tetris/main/main.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Profiles/Administrator/Desktop/Tetris/main/main.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Thu Apr 11 21:07:29 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr 11 21:07:29 2019...
+close_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 766.215 ; gain = 0.000
+create_project project_1 D:/Profiles/Administrator/Desktop/keyboard/project_1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+import_xise D:/Profiles/Administrator/Desktop/keyboard/PmodKYPD.xise
+CRITICAL WARNING: [Project 1-21] Could not resolve ISE project part 'xc6slx16-3-csg324'. Part replaced with default 'xc7vx485tffg1157-1'.
+CRITICAL WARNING: [Project 1-467] UCF constraints are not supported in Vivado (Nexys3_Master.ucf). Please convert these constraints to XDC and add then add the converted XDC constraints file to the project.
+INFO: [Project 1-195] The current run uses Vivado Strategies; hence no ISE run options will be mapped to this run during the import operation.
+                           Please see the summary report file for details.
+
+INFO: [Project 1-52] Generating summary report file 'D:/Profiles/Administrator/Desktop/keyboard/project_1/import_ise_summary.txt'...
+INFO: [Project 1-88] Report file generated.
+
+WARNING: [Project 1-91] Some exceptions were encountered while importing contents of the ISE project file. Please review the "EXCEPTIONS" section in the summary log file D:/Profiles/Administrator/Desktop/keyboard/project_1/import_ise_summary.txt at line 44 for details.
+
+INFO: [Coretcl 2-54] ISE import finished.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 11 21:12:10 2019...

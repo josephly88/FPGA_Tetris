@@ -5,33 +5,37 @@ library work;
 use work.my_types_pkg.all;
 
 entity move is
-    Port ( clk1Hz  : in std_logic;
+    Port ( clk100MHz  : in std_logic;
            myboard : buffer board;
            key     : buffer std_logic_vector(3 downto 0)
     );
 end move;
 
 architecture Behavioral of move is
-    signal pulse : integer := 0;
-    signal x : integer := 0;
-    signal y : integer := 5;
+    -- clk1Hz
+    signal clk1Hz  : std_logic := '0';
+    signal counter : integer := 0;
     
 begin
-    process(clk1Hz)         
+    --1Hz clock
+    process(clk100MHz)
     begin
-        if rising_edge(clk1Hz) then
-            if(pulse = 0 and (myboard(x)(y)) = '0') then
-                (myboard(x)(y)) <= '1';
-                 pulse <= pulse + 1;
-            elsif(pulse < 20  and (myboard(x+1)(y)) = '0' and (myboard(x)(y)) = '1') then          
-                (myboard(x+1)(y)) <= '1';
-                (myboard(x)(y)) <= '0';
-                x <= pulse;
-                pulse <= pulse + 1;
+        if rising_edge(clk100MHz) then
+            if(counter = 100000000/2 - 1) then
+                clk1Hz <= not clk1Hz;
+                counter <= 0;
             else
-                pulse <= 0;
-                x <= 0;
+                counter <= counter + 1;
             end if;
         end if;
     end process;
+   
+    process(clk1Hz)
+    begin
+        if rising_edge(clk1Hz) then
+        
+        
+        end if;
+    end process;
+    
 end Behavioral;
