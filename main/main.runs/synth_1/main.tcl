@@ -19,6 +19,7 @@ set_property ip_output_repo d:/Profiles/Administrator/Desktop/Tetris/main/main.c
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/main.vhd
+  D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling_block_decode.vhd
   D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling.vhd
   D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/imports/keyboard/PmodKYPD.vhd
   D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/imports/keyboard/DisplayController.vhd

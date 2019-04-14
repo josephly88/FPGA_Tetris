@@ -15,18 +15,20 @@ architecture Behavioral of move is
     component falling is
         Port (
                  clk100MHz  : in std_logic;
-                 myboard : buffer board
+                 myboard : buffer board;
+                 blocks : in std_logic_vector(2 downto 0)
         );
     end component;
 
     -- clk1Hz
     signal clk1Hz  : std_logic := '0';
     signal counter : integer := 0;
-    
+    signal blocks : std_logic_vector(2 downto 0) := "000";
 begin
     
 FALL: falling port map (
         clk100MHz => clk100MHz,
-        myboard => myboard
+        myboard => myboard,
+        blocks => blocks
 );
 end Behavioral;

@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4152 
+INFO: Helper process launched with PID 5256 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 320.633 ; gain = 110.648
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 321.691 ; gain = 111.719
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'main' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/main.vhd:58]
 INFO: [Synth 8-3491] module 'display' declared at 'D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/imports/new/display.vhd:9' bound to instance 'PRINT' of component 'display' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/main.vhd:99]
@@ -34,18 +34,21 @@ INFO: [Synth 8-638] synthesizing module 'DisplayController' [D:/Profiles/Adminis
 INFO: [Synth 8-256] done synthesizing module 'DisplayController' (4#1) [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/imports/keyboard/DisplayController.vhd:32]
 INFO: [Synth 8-3491] module 'move' declared at 'D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/move.vhd:7' bound to instance 'MOV' of component 'move' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/main.vhd:115]
 INFO: [Synth 8-638] synthesizing module 'move' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/move.vhd:14]
-INFO: [Synth 8-3491] module 'falling' declared at 'D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling.vhd:19' bound to instance 'FALL' of component 'falling' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/move.vhd:28]
-INFO: [Synth 8-638] synthesizing module 'falling' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling.vhd:26]
-INFO: [Synth 8-256] done synthesizing module 'falling' (5#1) [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling.vhd:26]
+INFO: [Synth 8-3491] module 'falling' declared at 'D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling.vhd:19' bound to instance 'FALL' of component 'falling' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/move.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'falling' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling.vhd:27]
+INFO: [Synth 8-3491] module 'falling_block_decode' declared at 'D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling_block_decode.vhd:34' bound to instance 'DECODE_BLOCK' of component 'falling_block_decode' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'falling_block_decode' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling_block_decode.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'falling_block_decode' (5#1) [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling_block_decode.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'falling' (6#1) [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling.vhd:27]
 WARNING: [Synth 8-3848] Net key in module/entity move does not have driver. [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/move.vhd:10]
-INFO: [Synth 8-256] done synthesizing module 'move' (6#1) [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/move.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'main' (7#1) [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/main.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'move' (7#1) [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/move.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'main' (8#1) [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/main.vhd:58]
 WARNING: [Synth 8-3331] design move has unconnected port key[3]
 WARNING: [Synth 8-3331] design move has unconnected port key[2]
 WARNING: [Synth 8-3331] design move has unconnected port key[1]
 WARNING: [Synth 8-3331] design move has unconnected port key[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 402.234 ; gain = 192.250
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 427.531 ; gain = 217.559
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -55,7 +58,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 402.234 ; gain = 192.250
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 427.531 ; gain = 217.559
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -72,30 +75,133 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 719.922 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 737.891 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 719.922 ; gain = 509.938
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 737.891 ; gain = 527.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 719.922 ; gain = 509.938
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 737.891 ; gain = 527.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 719.922 ; gain = 509.938
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 737.891 ; gain = 527.918
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "DecodeOut" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "DecodeOut" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "DecodeOut" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "DecodeOut" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "DecodeOut" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextR1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextC1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextC2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextR3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "clk1Hz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nextC1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nextR2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[0][9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[1][9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[2][9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[3][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[3][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[3][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[3][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[3][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "myboard[3][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5544] ROM "myboard[0][0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "myboard[0][1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "myboard[0][2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -187,44 +293,45 @@ INFO: [Synth 8-5544] ROM "myboard[8][7]" won't be mapped to Block RAM because ad
 INFO: [Synth 8-5544] ROM "myboard[8][8]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "myboard[8][9]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "myboard[9][0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "myboard[9][1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "myboard[9][2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "myboard[9][3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "myboard[9][4]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/imports/new/display.vhd:143]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 719.922 ; gain = 509.938
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 737.891 ; gain = 527.918
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |falling__GB0  |           1|     42160|
+|2     |falling__GB1  |           1|     13658|
+|3     |main__GC0     |           1|      2449|
++------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 5     
+	   2 Input     32 Bit       Adders := 9     
 	   2 Input     12 Bit       Adders := 2     
 	   2 Input      5 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 5     
+	               32 Bit    Registers := 9     
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                2 Bit    Registers := 210   
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
 	   2 Input      5 Bit        Muxes := 5     
 	  19 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 10    
 	   4 Input      4 Bit        Muxes := 2     
 	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 217   
+	   2 Input      1 Bit        Muxes := 850   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -232,6 +339,22 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module falling_block_decode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module falling 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                2 Bit    Registers := 210   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 844   
 Module display 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -255,16 +378,6 @@ Detailed RTL Component Info :
 	   5 Input      4 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 6     
-Module falling 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 5     
-+---Registers : 
-	               32 Bit    Registers := 5     
-	                2 Bit    Registers := 210   
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 211   
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -280,385 +393,5 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "clk1Hz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[20][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[19][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[18][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[17][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[16][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[15][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[14][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[13][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[12][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[11][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[10][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[9][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[8][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[7][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[6][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[5][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[4][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[3][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[2][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[1][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[0][9][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[20][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[19][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[18][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[17][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[16][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[15][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[14][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[13][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[12][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[11][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[10][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[9][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[8][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[7][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[6][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[5][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[4][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[3][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[2][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[1][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[0][8][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[20][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[19][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[18][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[17][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[16][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[15][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[14][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[13][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[12][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[11][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[10][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[9][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[8][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[7][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[6][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[5][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[4][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[3][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[2][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[1][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[0][9][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[20][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[19][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[18][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[17][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[16][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[15][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[14][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[13][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[12][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[11][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[10][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[9][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[8][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[7][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[6][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[5][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[4][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[3][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[2][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[1][8][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[0][8][1] )
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[1][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[1][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[1][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[1][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[2][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[2][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[2][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[2][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[3][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[3][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[3][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[3][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[4][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[4][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[4][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[4][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[5][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[5][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[5][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[5][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[6][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[6][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[6][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[6][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[7][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[7][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[7][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[7][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[8][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[8][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[8][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[8][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[9][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[9][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[9][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[9][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[10][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[10][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[10][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[10][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[11][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[11][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[11][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[11][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[12][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[12][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[12][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[12][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[13][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[13][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[13][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[13][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[14][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[14][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[14][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[14][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[15][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[15][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[15][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[15][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[16][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[16][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[16][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[16][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[17][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[17][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[17][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[17][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[18][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[18][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[18][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[18][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[19][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[19][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[19][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[19][9][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[20][8][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[20][8][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[20][9][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[20][9][1]) is unused and will be removed from module falling.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[20][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[19][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[18][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[17][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[16][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[15][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[14][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[13][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[12][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[11][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[10][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[9][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[8][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[7][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[6][5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MOV/FALL /\myboard_reg[5][5][0] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][0][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][0][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][1][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][1][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][2][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][2][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][3][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][3][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][4][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][4][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][5][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[0][5][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[1][0][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[1][0][1]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[1][1][0]) is unused and will be removed from module falling.
-WARNING: [Synth 8-3332] Sequential element (myboard_reg[1][1][1]) is unused and will be removed from module falling.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 719.922 ; gain = 509.938
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-ROM:
-+------------------+------------+---------------+----------------+
-|Module Name       | RTL Object | Depth x Width | Implemented As | 
-+------------------+------------+---------------+----------------+
-|DisplayController | led        | 32x8          | LUT            | 
-|main              | C1/led     | 32x8          | LUT            | 
-+------------------+------------+---------------+----------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 719.922 ; gain = 509.938
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 719.922 ; gain = 509.938
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 719.922 ; gain = 509.938
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 719.922 ; gain = 509.938
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 719.922 ; gain = 509.938
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 719.922 ; gain = 509.938
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 719.922 ; gain = 509.938
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 719.922 ; gain = 509.938
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 719.922 ; gain = 509.938
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |   512|
-|3     |LUT1   |   305|
-|4     |LUT2   |   361|
-|5     |LUT3   |  1277|
-|6     |LUT4   |    50|
-|7     |LUT5   |   134|
-|8     |LUT6   |   116|
-|9     |FDRE   |   268|
-|10    |LD     |     2|
-|11    |IBUF   |     5|
-|12    |OBUF   |    26|
-+------+-------+------+
-
-Report Instance Areas: 
-+------+---------+---------+------+
-|      |Instance |Module   |Cells |
-+------+---------+---------+------+
-|1     |top      |         |  3058|
-|2     |  KEYPAD |PmodKYPD |   112|
-|3     |    C0   |Decoder  |   112|
-|4     |  MOV    |move     |  2476|
-|5     |    FALL |falling  |  2476|
-|6     |  PRINT  |display  |   437|
-+------+---------+---------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 719.922 ; gain = 509.938
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 337 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 719.922 ; gain = 156.676
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 719.922 ; gain = 509.938
-INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 519 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'main' is not ideal for floorplanning, since the cellview 'falling' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
-  LD => LDCE: 2 instances
-
-INFO: [Common 17-83] Releasing license: Synthesis
-247 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 719.922 ; gain = 482.414
-INFO: [Common 17-1381] The checkpoint 'D:/Profiles/Administrator/Desktop/Tetris/main/main.runs/synth_1/main.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 719.922 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 13 21:08:54 2019...
+INFO: [Synth 8-4471] merging register 'nextC4_reg[31:0]' into 'nextC2_reg[31:0]' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling.vhd:88]
+INFO: [Synth 8-4471] merging register 'nextC1_reg[31:0]' into 'nextC3_reg[31:0]' [D:/Profiles/Administrator/Desktop/Tetris/main/main.srcs/sources_1/new/falling.vhd:82]

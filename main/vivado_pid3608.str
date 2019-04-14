@@ -3324,22 +3324,3 @@ selectCodeEditor("move.vhd", 223, 228); // bF:I (JPanel:JComponent, cd:JFrame)
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_UPDATE_GRAPH
 // Tcl Message: INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations. 
-// Elapsed time: 113 seconds
-selectCodeEditor("move.vhd", 118, 55); // bF:I (JPanel:JComponent, cd:JFrame)
-selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.vhd", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
-selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // v:K (u:D, cd:JFrame) - Node
-// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
-selectCodeEditor("move.vhd", 151, 206); // bF:I (JPanel:JComponent, cd:JFrame)
-collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 10); // y:i (D:JPanel, cd:JFrame)
-expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 10); // y:i (D:JPanel, cd:JFrame)
-selectCodeEditor("move.vhd", 224, 107); // bF:I (JPanel:JComponent, cd:JFrame)
-selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "main.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
-selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "falling.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
-selectCodeEditor("falling.vhd", 218, 95); // bF:I (JPanel:JComponent, cd:JFrame)
-selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "move.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
-// Elapsed time: 76 seconds
-selectCodeEditor("move.vhd", 485, 454); // bF:I (JPanel:JComponent, cd:JFrame)
-selectCodeEditor("move.vhd", 166, 378); // bF:I (JPanel:JComponent, cd:JFrame)
-selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "falling.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
-selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "move.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
-selectCodeEditor("move.vhd", 539, 401); // bF:I (JPanel:JComponent, cd:JFrame)
